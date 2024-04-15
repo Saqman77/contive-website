@@ -28,6 +28,12 @@ tl.from("body .bg-img",{
     duration:1,
 })
 
+tl.from("body .main-content .center",{
+    opacity:0,
+    y: 500,
+    duration:2
+})
+
 tl.fromTo(
     "body .bg-particles",
     {
