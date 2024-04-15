@@ -16,29 +16,39 @@ tl.from("body .bg-mask",{
     duration:1
 })
 
-tl.from("body .bg-particles, body .bg-img",{
+tl.from("body .bg-img",{
     opacity:0,
     duration:1,
+})
+
+tl.from("body .bg-particles",{
+    // scale:0,
+    // y: 500,
+    opacity:0,
+    duration:2,
+    repeat:-1,
+    yoyo:true
 })
 
 
 const warp = gsap.timeline()
 
 warp.to("feTurbulence",{
-    duration:15,
+    delay:0.5,
+    duration:10,
     repeat:-1,
     yoyo:true,
-    ease:"Linear.easeNone",
+    ease:"Sine.easeInOut",
     attr:{
         baseFrequency:0.01
     }
 })
 
 warp.to("feDisplacementMap",{
-    duration:15,
+    duration:10,
     repeat:-1,
     yoyo:true,
-    ease:"Linear.easeNone",
+    ease:"Sine.easeInOut",
     attr:{
         scale: 77
     }
