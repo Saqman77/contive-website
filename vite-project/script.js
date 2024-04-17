@@ -18,7 +18,7 @@ tl.from("nav ul li",{
 
 tl.from("body .bg-mask",{
     scale:0,
-    y: -500,
+    y: -600,
     opacity:0,
     duration:1
 })

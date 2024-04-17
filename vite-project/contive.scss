@@ -349,42 +349,42 @@ li:hover::before {
     text-decoration-color: transparent !important; /* Ensures no visible color */
 }
 
-  .main-content > a {
-    display: flex;
-    justify-content: center; /* Horizontally centers the child div */
-    width: 100%; /* Ensures the anchor tag takes full width */
-    text-decoration: none;
-    text-decoration-line: none;
+.main-content > a {
+  display: flex;
+  justify-content: center; /* Horizontally centers the child div */
+  width: 100%; /* Ensures the anchor tag takes full width */
+  text-decoration: none;
 }
 
 .main-content .center-cta {
-    background-color: rgb(54, 71, 255);
-    padding: 1.0156rem 2.4219rem;
-    width: 23.3125rem;
-    height: 3.9063rem;
-    margin: 0 auto; /* Centers the div horizontally */
-    display: flex; /* Enables flexbox for this div */
-    justify-content: center; /* Horizontally centers content */
-    align-items: center; /* Vertically centers content */
-    animation: glitchBox 2s infinite;
-    animation-delay: 7s;
-    text-decoration: none;
-    text-decoration-line: none;
+  background-color: rgb(54, 71, 255);
+  padding: 1.0156rem 2.4219rem;
+  width: 23.3125rem;
+  height: 3.9063rem;
+  margin: 0 auto; /* Centers the div horizontally */
+  display: flex; /* Enables flexbox for this div */
+  justify-content: center; /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
+  text-decoration: none;
 }
 
 .main-content .center-cta > p {
-    text-align: center; /* Centers text inside paragraph */
-    color: white;
-    font-size: 1.05rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 0; /* Removes default margin */
-    text-decoration-line: none;
-    text-shadow:.125rem .1875rem 0 rgba(0, 0, 0, 0.4);
+  text-align: center; /* Centers text inside paragraph */
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0; /* Removes default margin */
+  text-shadow:.125rem .1875rem 0 rgba(0, 0, 0, 0.4);
 }
 
-@keyframes glitchBox {
+.main-content .center-cta:hover {
+  animation: hoverEffect 2s infinite;
+  
+}
+
+@keyframes hoverEffect {
   0%, 100% {
       transform: translate(0, 0);
       box-shadow: 0 0 0 rgba(0, 0, 0, 0);
