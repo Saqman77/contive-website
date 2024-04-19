@@ -1,17 +1,24 @@
 
 const tl = gsap.timeline()
 
-tl.from("nav .logo-icon, nav ul li",{
+tl.from("nav .logo-icon",{
     y:-100,
     duration:0.3,
     delay:1,
+    opacity:0,
+    // stagger:0.2
+})
+tl.from("nav ul li",{
+    // y:-100,
+    // duration:0.3,
+    // delay:1,
     opacity:0,
     stagger:0.2
 })
 
 tl.from("body .bg-mask",{
     scale:0,
-    y: -500,
+    y: -600,
     opacity:0,
     duration:1
 })
@@ -21,15 +28,28 @@ tl.from("body .bg-img",{
     duration:1,
 })
 
-tl.from("body .bg-particles",{
-    // scale:0,
-    // y: 500,
+tl.from("body .main-content .center",{
     opacity:0,
-    duration:2,
-    repeat:-1,
-    yoyo:true
+    y: 500,
+    duration:2
 })
 
+tl.fromTo(
+    "body .bg-particles",
+    {
+        scale: 0.5, // Starting scale
+        y: -500,
+        opacity: 1,
+    },
+    {
+        scale: 1.7, // Ending scale
+        y: 300,
+        opacity: .5,
+        duration: 10,
+        repeat: -1,
+        ease: "Linear.easeNone",
+    }
+);
 
 const warp = gsap.timeline()
 
