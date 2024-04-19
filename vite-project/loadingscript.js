@@ -21,8 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (width >= containerWidth) {
                 clearInterval(progressInterval);
+                // When loading is complete, open new page
+                openNewPage();
             }
         }, interval);
+    }
+
+    // Function to open new page
+    function openNewPage() {
+        // Replace 'newPage.html' with the URL of the new page you want to open
+        window.location.href = 'newPage.html';
     }
 
     // Run the updateProgress function when the page loads
