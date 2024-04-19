@@ -20,19 +20,20 @@ body {
   height: 100vh; /* Use viewport height instead of fixed height */
   // width: 100%;
 }
-#background {
-  position: fixed; /* Position the div */
-  top: 0;
-  left: 0;
-  width: 100%; /* Fill the entire viewport horizontally */
-  height: 100%; /* Fill the entire viewport vertically */
-  z-index: -1; /* Send the div behind all other content */
-}
-#background img {
-  width: 100%; /* Make the image fill the container */
-  height: 100%; /* Make the image fill the container */
-  object-fit: cover; /* Cover the entire div with the image */
-}
+// #background {
+//   position: fixed; /* Position the div */
+//   top: 0;
+//   left: 0;
+//   width: 100%; /* Fill the entire viewport horizontally */
+//   height: 100%; /* Fill the entire viewport vertically */
+//   z-index: -1; /* Send the div behind all other content */
+//   position: absolute;
+// }
+// #background img {
+//   width: 100%; /* Make the image fill the container */
+//   height: 100%; /* Make the image fill the container */
+//   object-fit: cover; /* Cover the entire div with the image */
+// }
 
 .sec-usp-comp {
   // width: 100vw;
@@ -43,6 +44,22 @@ body {
   justify-content: center;
   scroll-snap-align: start;
   scroll-snap-align: stop;
+  position: relative;
+
+  #background {
+    position: fixed; /* Position the div */
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the entire viewport horizontally */
+    height: 100%; /* Fill the entire viewport vertically */
+    z-index: -1; /* Send the div behind all other content */
+    position: absolute;
+  }
+  #background img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Cover the entire div with the image */
+  }
 
   .card-comp-div1 img {
     width: 100%;
@@ -90,3 +107,22 @@ body {
 }
 
 /////////services Section
+.Services-sec{
+height: 100%;
+position: relative;
+background-color: #3647FF;
+#services-bg-img {
+  top: 0;
+  left: 0;
+  width: 100%; /* Fill the entire viewport horizontally */
+  height: 100%; /* Fill the entire viewport vertically */
+  z-index: 0; /* Send the div behind all other content */
+  position: absolute;
+}
+#services-bg-img img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Cover the entire div with the image */
+z-index: 1;
+}
+}
