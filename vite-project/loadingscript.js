@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Calculate and update progress number
     function updateProgress() {
         const containerWidth = loadingLine.parentElement.offsetWidth;
-    console.log(containerWidth)
         const interval = 20; // Update interval in milliseconds
 
         let width = 0;
