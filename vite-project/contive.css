@@ -3,6 +3,7 @@ html {
   width: 100%;
   font-size: 0.8333333333vw;
   font-family: sans-serif;
+  scroll-snap-type: y mandatory;
 }
 
 * {
@@ -17,6 +18,9 @@ body {
   background-color: rgb(9, 9, 11);
   background-size: contain;
   overflow-x: hidden;
+}
+section{
+  scroll-snap-align: start;
 }
 
 .bg-wrapper {
@@ -191,7 +195,12 @@ ul li:hover {
   height: 100%;
   width: 100%;
   display: flex;
+  scroll-snap-align: start;
+  #background{
+    position: relative;
+  }
 }
+
 
 .main-content .center {
   margin: auto;

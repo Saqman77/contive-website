@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to open new page
     function openNewPage() {
         // Replace 'newPage.html' with the URL of the new page you want to open
-        window.location.href = 'newPage.html';
+        window.location.href ='index1.html';
     }
 
     // Run the updateProgress function when the page loads
